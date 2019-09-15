@@ -6,8 +6,14 @@
 </head>
 <body>
     <header>
-        <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="109" height="19">   
-        <!--Здесь будет форма поиска-->
+        <div>
+            <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="109" height="19">   
+        </div>
+        <form action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-form">Форма поиска</label> 
+            <input type="search" name="search" id="search-form" placeholder="Поиск">
+            <button type="submit">Поиск</button>
+        </form>
         <ul>
             <li><a href="#">Закладки: 0</a></li>
             <li><a href="#">Корзина: 0</a></li>
@@ -35,9 +41,9 @@
         </nav>
     </header>
     <main>
-        <h1>Техномарт - интернет-магазин строительных материалов и инструментов для ремонта</h1> <!--Скрыть-->
+        <h1 class="visually-hidden">Техномарт - интернет-магазин строительных материалов и инструментов для ремонта</h1> 
         <section>
-            <h2>Промо-раздел магазина</h2>
+            <h2 class="visually-hidden">Промо-раздел магазина</h2>
             <section><!--Здесь слайдер-->
                 <ul>
                     <li>
@@ -80,25 +86,41 @@
             <a href="#">Все популярные товары</a>
             <ul>
                 <li>
-                    <a href="#"><img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170"></a>
+                    <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 9000</span></a></h3>
                     <p><del>32500 Р.</del></p>
                     <p>25500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170"></a>
+                    <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 3000</span></a></h3>
                     <p><del>22500 Р.</del></p>
                     <p>11500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170"></a>
+                    <img src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 6000</span></a></h3>
                     <p><del>30500 Р.</del></p>
                     <p>25500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170"></a>
+                    <img src="img/Perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 2000</span></a></h3>
                     <p></p> <!--Или поставить какойто контент, и сделать невидимым-->
                     <p>12500 Р.</p>    
@@ -168,14 +190,16 @@
         <section>
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис</p>
-            <a href="#"><img src="img/map.png" alt="Карта" width="300" height="158"></a><br>
+            <a href="#"><img src="img/map.png" alt="Карта проезда к офису по адресу: Санкт-Петербург, ул. Большая Конюшенная, д.19" width="300" height="158"></a><br>
             <a href="#">Заблудились? Напишите нам!</a>
         </section>
     </main>
     <footer>
         <section>
             <div>
-                <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="109" height="19">
+                <div>
+                    <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="109" height="19">
+                </div>
                 <p>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
                 <p>+7(812)555-05-55</p>
             </div>
@@ -216,5 +240,28 @@
             </div>
         </section>
     </footer>
+    <section>
+        <a href="https://yandex.ru/maps/">
+            <img src="img/map-big.png" alt="Карта проезда к офису по адресу: Санкт-Петербург, ул. Большая Конюшенная, д.19" width="970" height="476">
+        </a>    
+        <button type="button">Закрыть</button>
+    </section>
+    <section>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="user-name">Ваше имя</label>
+                <input type="text" placeholder="Имя Фамилия" id="user-name" name="name">
+            </p>
+            <p>
+                <label for="user-email">Ваш e-mail</label>
+                <input type="text" placeholder="email@example.com" id="user-email" name="email">
+            </p>
+            <p>
+                <label for="letter-text">Текст письма</label>
+                <textarea name="letter" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
 </body>  
 </html>

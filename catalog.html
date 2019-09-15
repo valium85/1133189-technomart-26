@@ -6,10 +6,14 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
+        <div>
             <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="109" height="19">   
-        </a>
-        <!--Здесь будет форма поиска-->
+        </div>
+        <form action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-form">Форма поиска</label> 
+            <input type="search" name="search" id="search-form" placeholder="Поиск">
+            <button type="submit">Поиск</button>
+        </form>
         <ul>
             <li><a href="#">Закладки:0</a></li>
             <li><a href="#">Корзина:10</a></li>
@@ -45,72 +49,143 @@
     <main>
         <h1>Перфораторы</h1>
         <ul>
-            <li><a href="index.html"><img src="img/icon-home.jpg" alt="Главная-конка" width="14" height="12"></a></li>
+            <li><a href="index.html"><img src="img/icon-home.jpg" alt="Главная-иконка" width="14" height="12"></a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Инструмент</a></li>
             <li><a>Перфораторы</a></li>
         </ul>
         <section>
-            <h2>Фильтры для поиска</h2>
-            <!-- Здесь будут формы с фильтрами-->
+            <h2>Фильтр:</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
+                <fieldset>
+                    <legend>Цена</legend>
+                    <input type="range" min="0" max="30000" name="price-min">
+                    <input type="range" min="0" max="30000" name="price-max">
+                    <p>0</p>
+                    <p>-</p>
+                    <p>30000</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Производители</legend>
+                    <ul>
+                        <li><label><input type="checkbox" name="bosch" checked="">Bosch</label></li>
+                        <li><label><input type="checkbox" name="interskol">Интерскол</label></li>
+                        <li><label><input type="checkbox" name="makita" checked>Makita</label></li>
+                        <li><label><input type="checkbox" name="dewalt">DeWalt</label></li>
+                        <li><label><input type="checkbox" name="hitachi">Hitachi</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание</legend>
+                    <ul>
+                        <li><label><input type="radio" name="power-supply" value="accumulator" checked>Аккумуляторные</label></li>
+                        <li><label><input type="radio" name="power-supply" value="net"></label>Сетевые</li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>   
         </section>
         <section>
-            <h2>Сортировка по типу</h2>
-            <!-- Здесь будет верхняя плашка с фильтрами-->
+            <h2>Сортировка:</h2>
+            <ul>
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По функционалу</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="img/icon-up-dir.svg" alt="Стрелка вверх" width="11" height="10"></a></li>
+                <li><a href="#"><img src="img/icon-down-dir.svg" alt="Стрелка вниз" width="11" height="10"></a></li>
+            </ul>
         </section>
         <section>
-            <h2>Каталог перфораторов</h2>
+            <h2 class="visually-hidden">Каталог перфораторов</h2>
             <ul>
                 <li>
-                    <a href="#"><img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170"></a>
+                    <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 3000</span></a></h3>
                     <p><del>22500 Р.</del></p>
                     <p>11500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170"></a>
+                    <img src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 6000</span></a></h3>
                     <p><del>30500 Р.</del></p>
                     <p>25500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170"></a>
+                    <img src="img/Perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 2000</span></a></h3>
                     <p></p> <!--Или поставить какойто контент, и сделать невидимым-->
                     <p>12500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170"></a>
+                    <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 3000</span></a></h3>
                     <p><del>22500 Р.</del></p>
                     <p>11500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170"></a>
+                    <img src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 6000</span></a></h3>
                     <p><del>30500 Р.</del></p>
                     <p>25500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170"></a>
+                    <img src="img/Perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 2000</span></a></h3>
                     <p></p> <!--Или поставить какойто контент, и сделать невидимым-->
                     <p>12500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170"></a>
+                    <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 3000</span></a></h3>
                     <p><del>22500 Р.</del></p>
                     <p>11500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170"></a>
+                    <img src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 6000</span></a></h3>
                     <p><del>30500 Р.</del></p>
                     <p>25500 Р.</p>    
                 </li>
                 <li>
-                    <a href="#"><img src="img/Perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170"></a>
+                    <img src="img/Perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
+                    <div class="item-active"> <!--Это ховер -->
+                        <button type="button">Купить</button>
+                        <button type="button">В закладки</button>
+                    </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 2000</span></a></h3>
                     <p></p> <!--Или поставить какойто контент, и сделать невидимым-->
                     <p>12500 Р.</p>    
@@ -172,5 +247,12 @@
             </div>
         </section>
     </footer>
+    <section>
+        <img src="img/form-1.png" alt="Товар добавлен" width="66" height="66">
+        <p>Товар добавлен в корзину!</p>
+        <a href="#">Оформить заказ</a>
+        <a href="#">Продолжить покупки</a>
+        <button type="button">Закрыть</button>  
+    </section>
 </body>
 </html>
