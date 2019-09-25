@@ -53,22 +53,21 @@
         <div class="page-heading">
             <h1>Перфораторы</h1>
         </div>
-        <ul>
+        <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Инструмент</a></li>
             <li><a>Перфораторы</a></li>
         </ul>
-        <section>
-            <h2>Фильтр:</h2>
+        <section class="filter">
+            <h2 class="filters-block">Фильтр:</h2>
             <form action="https://echo.htmlacademy.ru" method="get">
-                <fieldset>
+                <fieldset class="filter-price">
                     <legend>Цена</legend>
-                    <input type="range" min="0" max="30000" name="price-min">
-                    <input type="range" min="0" max="30000" name="price-max">
-                    <p>0</p>
-                    <p>-</p>
-                    <p>30000</p>
+                    <div class="double-range"></div>
+                    <p class="filters-block">0</p>
+                    <p>—</p>
+                    <p class="filters-block">30000</p>
                 </fieldset>
                 <fieldset>
                     <legend>Производители</legend>
@@ -87,17 +86,17 @@
                         <li><label><input type="radio" name="power-supply" value="net"></label>Сетевые</li>
                     </ul>
                 </fieldset>
-                <button type="submit">Показать</button>
+                <button class="filter-button" type="submit">Показать</button>
             </form>   
         </section>
-        <section>
-            <h2>Сортировка:</h2>
-            <ul>
+        <section class="sorting">
+            <h2 class="filters-block">Сортировка:</h2>
+            <ul class="sorting-type">
                 <li><a href="#">По цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По функционалу</a></li>
             </ul>
-            <ul>
+            <ul class="arrows">
                 <li><a href="#"><img src="img/icon-up-dir.svg" alt="Стрелка вверх" width="11" height="10"></a></li>
                 <li><a href="#"><img src="img/icon-down-dir.svg" alt="Стрелка вниз" width="11" height="10"></a></li>
             </ul>
@@ -197,7 +196,7 @@
                 </li>
             </ul>
             <ul class="pagination">
-                <li><a href="#">1</a></li>
+                <li class="pagination-current"><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">Следующая</a></li>
