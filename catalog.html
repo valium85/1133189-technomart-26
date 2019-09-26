@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="header-top">
+        <div class="header-top"> 
             <a class="logo" href="index.html">
                <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт" width="109" height="19">   
             </a>
@@ -25,10 +25,10 @@
             </ul>
         </div>
         <div class="header-middle">
-            <p class="italic-red">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <div class="header-contacts">
                 <p class="header-phone">+7(812)555-05-55</p>
-                <p class="header-adress">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+                <p class="header-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
             </div>
             <div class="user-navigation-logged">
                 <button class="button-header" type="button">Равшан Джамшутович</button>
@@ -64,7 +64,14 @@
             <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="filter-price">
                     <legend>Цена</legend>
-                    <div class="double-range"></div>
+                    <div class="double-range">
+                        <div class="double-range-grayline">
+                            <div class="double-range-greenline">
+                                <div class="double-range-button"></div>
+                                <div class="double-range-button"></div>
+                            </div>
+                        </div>
+                    </div>
                     <p class="filters-block">0</p>
                     <p>—</p>
                     <p class="filters-block">30000</p>
@@ -124,14 +131,14 @@
                     <p class="price-old">30500 Р.</p>
                     <p class="price-red">25500 Р.</p>    
                 </li>
-                <li class="new">
+                <li class="catalog-item-new">
                     <img src="img/Perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
                     <div class="item-active"> <!--Это ховер -->
                         <button type="button">Купить</button>
                         <button type="button">В закладки</button>
                     </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 2000</span></a></h3>
-                    <p class="price-old-no">Нет</p> 
+                    <p class="price-old-none">Нет</p> 
                     <p class="price-red">12500 Р.</p>    
                 </li>
                 <li>
@@ -144,7 +151,7 @@
                     <p class="price-old">22500 Р.</p>
                     <p class="price-red">11500 Р.</p>    
                 </li>
-                <li class="new">
+                <li class="catalog-item-new">
                     <img src="img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
                     <div class="item-active"> <!--Это ховер -->
                         <button type="button">Купить</button>
@@ -161,10 +168,10 @@
                         <button type="button">В закладки</button>
                     </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 2000</span></a></h3>
-                    <p class="price-old-no">Нет</p> 
+                    <p class="price-old-none">Нет</p> 
                     <p class="price-red">12500 Р.</p>    
                 </li>
-                <li class="new">
+                <li class="catalog-item new">
                     <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                     <div class="item-active"> <!--Это ховер -->
                         <button type="button">Купить</button>
@@ -191,7 +198,7 @@
                         <button type="button">В закладки</button>
                     </div>
                     <h3><a href="#"><span>Перфоратор BOSCH</span> <span>BFG 2000</span></a></h3>
-                    <p class="price-old-no">Нет</p> 
+                    <p class="price-old-none">Нет</p> 
                     <p class="price-red">12500 Р.</p>    
                 </li>
             </ul>
@@ -199,7 +206,7 @@
                 <li class="pagination-current"><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
-                <li><a href="#">Следующая</a></li>
+                <li class="pagination-next"><a href="#">Следующая</a></li>
             </ul>
         </section>
         <section class="article">
