@@ -60,7 +60,7 @@
             <li><a>Перфораторы</a></li>
         </ul>
         <section class="filter">
-            <h2 class="filters-block">Фильтр:</h2>
+            <h2 class="filter-header">Фильтр:</h2>
             <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="filter-price">
                     <legend>Цена</legend>
@@ -72,9 +72,9 @@
                             </div>
                         </div>
                     </div>
-                    <p class="filters-block">0</p>
+                    <label><input type="text" name="price-min" value="0">Минимальная цена</label>
                     <p>—</p>
-                    <p class="filters-block">30000</p>
+                    <label><input type="text" name="price-max" value="30000">Максимальная цена</label>
                 </fieldset>
                 <fieldset>
                     <legend>Производители</legend>
@@ -97,7 +97,7 @@
             </form>   
         </section>
         <section class="sorting">
-            <h2 class="filters-block">Сортировка:</h2>
+            <h2 class="filter-header">Сортировка:</h2>
             <ul class="sorting-type">
                 <li><a href="#">По цене</a></li>
                 <li><a href="#">По типу</a></li>
@@ -108,9 +108,9 @@
                 <li><a href="#"><img src="img/icon-down-dir.svg" alt="Стрелка вниз" width="11" height="10"></a></li>
             </ul>
         </section>
-        <section class="items">
+        <section class="catalog">
             <h2 class="visually-hidden">Каталог перфораторов</h2>
-            <ul class="items-list">
+            <ul class="catalog-list">
                 <li>
                     <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                     <div class="item-active"> <!--Это ховер -->

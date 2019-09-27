@@ -301,7 +301,7 @@ a {
 
 /*---Популярные товары и брэнды общее---*/
 
-.items ul,
+.catalog ul,
 .brands ul {
   list-style: none;
 }
@@ -345,30 +345,30 @@ a {
 
 /*--Карточки товаров--*/
 
-.items-list {
+.catalog-list {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
 }
 
-.items-list li {
+.catalog-list li {
   width: 220px;
   height: 318px;
   border: 1px solid #e5e5e5;
 }
 
-.items h3 {
+.catalog h3 {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
 } 
 
-.items h3 a {
+.catalog h3 a {
   color: inherit;
 }
 
-.items p {
+.catalog p {
   text-align: center;
 }
 
@@ -378,15 +378,15 @@ a {
   display: none;
 }
 
-.items-list li:hover img {
+.catalog-list li:hover img {
   display: none;
 }
 
-.items-list li:hover div {
+.catalog-list li:hover div {
   display: block;
 }
 
-.items-list li:hover {
+.catalog-list li:hover {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -600,7 +600,7 @@ a {
   line-height: 18px;
 }
 
-.filters-block {
+.filter-header {
   height: 38px;
   background-color: #f9f5f0;
   border-radius: 2px;
@@ -647,6 +647,14 @@ a {
   width: 20px;
   height: 22px;
   background: url(../img/filter-button.svg) no-repeat; 
+}
+
+.filter-price input {
+  width: 95px;
+  height: 38px;
+  background-color: #f9f5f0;
+  border-radius: 2px;
+  text-align: center;
 }
 
 .filter-button {
