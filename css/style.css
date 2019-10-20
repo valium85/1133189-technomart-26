@@ -606,10 +606,13 @@ header ul {
 /*---Слайды---*/
 
 .slide {
-  color: #ffffff;
+  box-sizing: border-box;
   width: 620px;
   height: 266px;
+  padding-top: 27px;
+  padding-left: 24px;
   background-size: cover;
+  color: #ffffff;
 }
 
 .slide-1 {
@@ -622,7 +625,7 @@ header ul {
 } 
 
 .slider h2 {
-  margin-top: 0;
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
 }
@@ -630,6 +633,9 @@ header ul {
 .slider p {
   font-size: 18px;
   line-height: 24px;
+  min-height: 96px;
+  margin-top: 8px;
+  margin-bottom: 40px; 
 }
 
 .slider a {
@@ -747,7 +753,6 @@ header ul {
 
 .catalog-image {
   display: block;
-  /*display: none;*/
   width: 218px;
   height: 170px;
 }
@@ -771,7 +776,6 @@ header ul {
 
 .item-active {
   display: none;
-  /*display: block;*/
   
   margin-top: 43px;
   width: 218px;
@@ -953,11 +957,7 @@ header ul {
 
 .services {
   background-color: #f4f8f9;
-  width: 940px;
   margin: 0 auto 82px;
-  
-  /*Стиль сетки*/
-  outline: 1px solid lightblue;
 }
 
 .services .container {
@@ -966,6 +966,8 @@ header ul {
 
 .services ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .services h2 {
@@ -1179,7 +1181,6 @@ header ul {
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-  /*Временно для разделения*/
   padding-right: 40px;
 }
 
