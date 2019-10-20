@@ -13,6 +13,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%
+  height: auto;
+}
+
 /*---Сеточные стили---*/
 
 .container {
@@ -113,7 +118,7 @@ header ul {
   width: 17px;
   height: 17px;
   
-  background-image: url(../img/icon-search.svg);
+  background-image: url("../img/icon-search.svg");
   opacity: 0.3;
 }
 
@@ -131,7 +136,7 @@ header ul {
 }
 
 .search:focus-within::before {
-  background-image: url(../img/icon-search-active.svg);
+  background-image: url("../img/icon-search-active.svg");
   opacity: 1;
 }
 
@@ -185,7 +190,7 @@ header ul {
   width: 14px;
   height: 16px;
   
-  background-image: url(../img/icon-bookmark.svg);
+  background-image: url("../img/icon-bookmark.svg");
   opacity: 0.3;
 }
 
@@ -203,7 +208,7 @@ header ul {
   width: 15px;
   height: 15px;
   
-  background-image: url(../img/icon-cart.svg);
+  background-image: url("../img/icon-cart.svg");
   opacity: 0.3;
 }
 
@@ -301,7 +306,7 @@ header ul {
   width: 19px;
   height: 19px;
   
-  background-image: url(../img/icon-phone.svg);
+  background-image: url("../img/icon-phone.svg");
 }
 
 .header-address {
@@ -433,16 +438,16 @@ header ul {
   width: 20px;
   height: 17px;
   
-  background-image: url(../img/icon-login.svg);
+  background-image: url("../img/icon-login.svg");
 }
 
 .button-header-login:hover::before,
 .button-header-login:focus::before {
-  background-image: url(../img/icon-login-hover.svg);
+  background-image: url("../img/icon-login-hover.svg");
 }
 
 .button-header-login:active::before {
-  background-image: url(../img/icon-login.svg);
+  background-image: url("../img/icon-login.svg");
 } 
 
 .button-header-registration {
@@ -469,16 +474,16 @@ header ul {
   width: 20px;
   height: 18px;
   
-  background-image: url(../img/icon-user.svg);
+  background-image: url("../img/icon-user.svg");
 }
 
 .button-header-user:hover::before,
 .button-header-user:focus::before {
-  background-image: url(../img/icon-user-hover.svg);
+  background-image: url("../img/icon-user-hover.svg");
 }
 
 .button-header-user:active::before {
-  background-image: url(../img/icon-user.svg);
+  background-image: url("../img/icon-user.svg");
 }
 
 .button-header-user::after {
@@ -491,16 +496,16 @@ header ul {
   width: 20px;
   height: 17px;
   
-  background-image: url(../img/icon-logout.svg);
+  background-image: url("../img/icon-logout.svg");
 }
 
 .button-header-user:hover::after,
 .button-header-user:focus::after {
-  background-image: url(../img/icon-logout-hover.svg);
+  background-image: url("../img/icon-logout-hover.svg");
 }
 
 .button-header-user:active::after {
-  background-image: url(../img/icon-logout.svg);
+  background-image: url("../img/icon-logout.svg");
 }
 
 /*-----------ГЛАВНАЯ СТРАНИЦА-----------*/
@@ -574,8 +579,8 @@ header ul {
 .promo-1 {
   background-color:#ffbf47;
   background-image: 
-  url(../img/new-flag.png),
-  url(../img/icon-1.svg); 
+  url("../img/new-flag.png"),
+  url("../img/icon-1.svg"); 
   background-position: 
   top right,
   213px 50%;
@@ -583,19 +588,19 @@ header ul {
 }
 
 .promo-2 {
-  background: #3bbce3 url(../img/icon-2.svg) 196px 50% no-repeat;  
+  background: #3bbce3 url("../img/icon-2.svg") 196px 50% no-repeat;  
 }
 
 .promo-3 {
-  background: #dc91d8 url(../img/icon-3.svg) 191px 50% no-repeat;  
+  background: #dc91d8 url("../img/icon-3.svg") 191px 50% no-repeat;  
 }
 
 .promo-4 {
-  background: #8ed78f url(../img/icon-4.svg) 196px 50% no-repeat;
+  background: #8ed78f url("../img/icon-4.svg") 196px 50% no-repeat;
 }
 
 .promo-5 {
-  background: #ffc047 url(../img/icon-5.svg) 191px 50% no-repeat; 
+  background: #ffc047 url("../img/icon-5.svg") 191px 50% no-repeat; 
 }
 
 /*---Слайды---*/
@@ -608,11 +613,11 @@ header ul {
 }
 
 .slide-1 {
-  background: #9d9792 url(../img/slider1.jpg) top center no-repeat; 
+  background: #9d9792 url("../img/slider1.jpg") top center no-repeat; 
 }
 
 .slide-2 {
-  background: #9d9792 url(../img/slider2.jpg) top center no-repeat;
+  background: #9d9792 url("../img/slider2.jpg") top center no-repeat;
   display: none;
 } 
 
@@ -751,9 +756,9 @@ header ul {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+  width: 160px;
+  margin: 11px auto 15px;
   padding: 0;
-  margin-top: 11px;
-  margin-bottom: 15px;
 } 
 
 .catalog h3 a {
@@ -825,7 +830,7 @@ header ul {
   width: 15px;
   height: 15px;
   
-  background-image: url(../img/icon-cart.svg);
+  background-image: url("../img/icon-cart.svg");
   opacity: 0.3;
 }
 
@@ -885,7 +890,7 @@ header ul {
   height: 38px;
   color: #ffffff;
   
-  background-image: url(../img/red-button.svg);
+  background-image: url("../img/red-button.svg");
   background-repeat: no-repeat;
 }
 
@@ -903,7 +908,7 @@ header ul {
   width: 60px;
   height: 59px;
   
-  background-image: url(../img/new-flag.png);
+  background-image: url("../img/new-flag.png");
 }
 
 /*----Сетка карточек брэндов----*/
@@ -1072,7 +1077,7 @@ header ul {
   width: 25px;
   height: 2px;
   
-  background-image: url(../img/list-item.png);
+  background-image: url("../img/list-item.png");
 }
 
 .company h2,
@@ -1165,7 +1170,7 @@ header ul {
   width: 8px;
   height: 12px;
   
-  background-image: url(../img/icon-right-small.svg);
+  background-image: url("../img/icon-right-small.svg");
 }
 
 .breadcrumbs a {
@@ -1192,7 +1197,7 @@ header ul {
   width: 14px;
   height: 12px;
   
-  background-image: url(../img/icon-home.svg);
+  background-image: url("../img/icon-home.svg");
 }
 
 .breadcrumbs a:hover {
@@ -1333,7 +1338,7 @@ header ul {
   margin: 0;
   width: 20px;
   height: 22px;
-  background: url(../img/filter-button.svg) no-repeat;
+  background: url("../img/filter-button.svg") no-repeat;
 }
 
 .double-range-button-right {
@@ -1397,7 +1402,7 @@ header ul {
 }
 
 .checkbox-switch::before {
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url("../img/checkbox-off.svg");
 }
 
 .radio-switch::before {
@@ -1406,35 +1411,35 @@ header ul {
   width: 25px;
   height: 25px;
 
-  background-image: url(../img/radio-off.svg);
+  background-image: url("../img/radio-off.svg");
 }
 
 .filter-checkbox input:checked + .checkbox-switch::before {
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .filter-checkbox label:hover .checkbox-switch::before,
 .filter-checkbox label:focus .checkbox-switch::before {
-  background-image: url(../img/checkbox-off-hover.svg); 
+  background-image: url("../img/checkbox-off-hover.svg"); 
 }
 
 .filter-checkbox input:checked:hover + .checkbox-switch::before,
 .filter-checkbox input:checked:hover + .checkbox-switch::before {
-  background-image: url(../img/checkbox-on-hover.svg);  
+  background-image: url("../img/checkbox-on-hover.svg");  
 } 
 
 .filter-radio input:checked + .radio-switch::before {
-  background-image: url(../img/radio-on.svg);
+  background-image: url("../img/radio-on.svg");
 }
 
 .filter-radio label:hover .radio-switch::before,
 .filter-radio label:focus .radio-switch::before {
-  background-image: url(../img/radio-off-hover.svg);  
+  background-image: url("../img/radio-off-hover.svg");  
 }
 
 .filter-radio input:checked:hover + .radio-switch::before,
 .filter-radio input:checked:hover + .radio-switch::before {
-  background-image: url(../img/radio-on-hover.svg);  
+  background-image: url("../img/radio-on-hover.svg");  
 }
 
 /*-----Сортировка-----*/
@@ -1660,15 +1665,15 @@ header ul {
 }
 
 .vk {
-  background: url(../img/icon-vk.svg) 50% 50% no-repeat;
+  background: url("../img/icon-vk.svg") 50% 50% no-repeat;
 }
 
 .facebook {
-  background: url(../img/icon-fb.svg) 50% 50% no-repeat;
+  background: url("../img/icon-fb.svg") 50% 50% no-repeat;
 }
 
 .instagram {
-  background: url(../img/icon-insta.svg) 50% 50% no-repeat;
+  background: url("../img/icon-insta.svg") 50% 50% no-repeat;
 }
 
 .write-us {
