@@ -354,12 +354,18 @@
             </div>
         </section>
     </footer>
-    <section>
-        <img src="img/form-1.png" alt="Товар добавлен" width="66" height="66">
-        <p>Товар добавлен в корзину!</p>
-        <a href="#">Оформить заказ</a>
-        <a href="#">Продолжить покупки</a>
-        <button type="button">Закрыть</button>  
+    <section class="modal modal-cart-adding">
+        <div class="modal-columns-cart modal-wrap">
+            <img src="img/form-1.png" alt="Товар добавлен" width="66" height="66">
+            <p>Товар добавлен в корзину!</p>
+        </div>
+        <div class="modal-buttonspace">
+            <div class="modal-columns modal-wrap">
+                <a class="red-button" href="#">Оформить заказ</a>
+                <a class="red-button white-button" href="#">Продолжить покупки</a>
+            </div>
+        </div>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>  
     </section>
 </body>
 </html>
