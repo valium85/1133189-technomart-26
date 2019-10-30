@@ -85,7 +85,6 @@ header ul {
   background-color: #ee3643;
   -webkit-box-shadow: 0 5px #b52933;
           box-shadow: 0 5px #b52933;
-
 }
 
 .logo:hover,
@@ -119,7 +118,7 @@ header ul {
 
 .search input {
   padding-left: 48px;
-  background-color: inherit;
+  background-color: #293449;
   color: inherit;
   border: none;
   
@@ -142,6 +141,7 @@ header ul {
   
   background-image: url("../img/icon-search.svg");
   opacity: 0.3;
+  z-index: 2;
 }
 
 .search input:hover {
@@ -157,9 +157,13 @@ header ul {
   color: #000000;
 }
 
-.search:focus-within::before {
+.search input:focus {
   background-image: url("../img/icon-search-active.svg");
+  background-size: 17px 17px;
+  background-position: 17px 12px;
+  background-repeat: no-repeat;
   opacity: 1;
+  z-index: 2;
 }
 
 .search input::-webkit-input-placeholder {
@@ -391,6 +395,10 @@ header ul {
 
 /*---Нижняя плашка---*/
 
+.main-navigation{
+  margin-top: 38px; 
+}
+
 .site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,7 +407,7 @@ header ul {
           box-sizing: border-box;
   width: 940px;
   min-height: 55px;
-  margin: 38px auto 58px;
+  margin: 0 auto;
   padding: 0 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1077,8 +1085,15 @@ header ul {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 220px;
-  min-height: 145px;
+  min-height: 143px;
   border: 1px solid #e5e5e5;
+}
+
+.brand-cards a::after {
+/*костыль для эксплорера, ровняет флекс, добавляет+2px по высоте*/
+content: "";
+min-height: inherit;
+font-size: 0;
 }
 
 .brand-cards a:hover,
@@ -1097,8 +1112,8 @@ header ul {
 
 .services {
   background-color: #f4f8f9;
-  margin: 0 auto 50px;
-  padding-top: 38px;
+  margin: 0 auto 54px;
+  padding-top: 40px;
 }
 
 .services .container {
@@ -1117,21 +1132,25 @@ header ul {
 }
 
 .services h3 {
-  margin: 0 0 27px;
+  margin: 2px 0 24px;
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
   text-transform: uppercase;
 }
 
+.service-description {
+  width: 400px;
+  margin-bottom: 23px;
+}
+
 .services p {
   font-family: "PT Sans", Arial, sans-serif;
-  margin-bottom: 23px;
 }
 
 .service-info p {
   max-width: 380px;
-  margin-bottom: 22px;
+  margin: 0;
 }
 
 .service-aside {
@@ -1166,8 +1185,8 @@ header ul {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 15px;
-  padding-left: 23px;
+  padding-top: 14px;
+  padding-left: 22px;
   margin-bottom: 2px;
   width: 240px;
   height: 60px;
@@ -1209,7 +1228,8 @@ header ul {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 700px;
-  padding-top: 46px;
+  min-height: 331px;
+  padding-top: 43px;
   padding-left: 80px;
 }
 
@@ -1241,6 +1261,7 @@ header ul {
 }
 
 .credit .red-button {
+  margin-top: 30px;
   width: 195px;
 }
 
@@ -1298,6 +1319,10 @@ header ul {
 .contacts p {
   font-family: "PT Sans", Arial, sans-serif;
   margin-bottom: 25px;
+}
+
+.contacts p {
+  width: 180px;
 }
 
 .map-small {
@@ -1451,10 +1476,14 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 38px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 38px;
   background-color: #f9f5f0;
   border-radius: 2px;
   margin-bottom: 20px;
+
 }
 
 /*---Формы каталога---*/
@@ -1479,8 +1508,11 @@ header ul {
   font-size: 13px;
   line-height: 18px;
   margin: 0;
-  padding-top: 10px;
   padding-left: 19px;
+}
+
+.filter h2 {
+  padding-top: 10px;
 }
 
 .filter-header {
@@ -1631,13 +1663,13 @@ header ul {
   position: absolute;
   left: -34px;
   top: -2px;
-
-  width: 23px;
-  height: 23px;
+  background-repeat: no-repeat;
 }
 
 .checkbox-switch::before {
   background-image: url("../img/checkbox-off.svg");
+  width: 27px;
+  height: 23px;
 }
 
 .radio-switch::before {
@@ -1697,6 +1729,7 @@ header ul {
 
 .sorting-type a {
   display: block;
+  
   padding-right: 0px;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
@@ -1883,6 +1916,20 @@ header ul {
   padding-left: 25px;
 }
 
+.footer-list-1 {
+  margin-bottom: 15px;
+}
+
+.footer-list-2 {
+  margin-top: 15px;
+}
+
+.footer-list-2 a,
+.write-us a,
+.developer a {
+  color: #ffd180;
+} 
+
 .footer-bottom {
   background-color: #293449;
   font-size: 16px;
@@ -1955,11 +2002,6 @@ header ul {
   width: 112px;
 }
 
-.footer-list-2 a,
-.write-us a,
-.developer a {
-  color: #ffd180;
-} 
 
 /*----Попапы----*/
 
@@ -2107,3 +2149,8 @@ header ul {
   height: 1px;
   margin: -1px;
 }
+
+.optimizer {
+  /*устраняет обрезку фона при сжатии браузера*/
+  min-width: 960px;
+} 
