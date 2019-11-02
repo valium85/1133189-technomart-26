@@ -1,6 +1,10 @@
+// Попап "Напишите нам"
+
 var writeUsLink = document.querySelector(".write-us-link");
   
 var writeUsPopup = document.querySelector(".modal-write-us");
+
+// Попап напишите нам
 
 var writeUsClose = writeUsPopup.querySelector(".modal-close");
   
@@ -39,6 +43,9 @@ writeUsForm.addEventListener("submit", function (evt) {
       writeUsPopup.classList.add("modal-error");
     } else {
       localStorage.setItem("name", name.value);
+      localStorage.setItem("email", email.value);
+      localStorage.setItem("letter", letter.value);
+      writeUsPopup.classList.remove("modal-show");
     }  
 });
 
@@ -48,6 +55,33 @@ if (evt.keyCode === 27) {
   if (writeUsPopup.classList.contains("modal-show")) {
     writeUsPopup.classList.remove("modal-show");
     writeUsPopup.classList.remove("modal-error");
+  }
+}
+});
+
+// Попап карты
+
+var mapLink = document.querySelector(".map-small");
+  
+var mapPopup = document.querySelector(".modal-map");
+
+var mapClose = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+if (evt.keyCode === 27) {
+  evt.preventDefault();
+  if (mapPopup.classList.contains("modal-show")) {
+    mapPopup.classList.remove("modal-show");
   }
 }
 });

@@ -322,6 +322,10 @@ header ul {
   border: 3px solid #ffffff;
 }
 
+.header-phone a {
+  color: #ee3643;  
+}
+
 .header-phone::before {
   content: "";
   
@@ -383,7 +387,7 @@ header ul {
 
 .circle {
   display: inline-block;
-
+  vertical-align: middle;
   width: 5px;
   height: 5px;
   margin-left: 13px;
@@ -758,6 +762,7 @@ header ul {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: middle; 
   height: 12px;
   width: 12px;
   padding: 0;
@@ -2043,6 +2048,22 @@ font-size: 0;
   margin-left: -470px;
 }
 
+.modal-map iframe {
+  position: absolute;
+  z-index: 2;
+
+  border: none;
+}
+
+.modal-map a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
 .modal-cart-adding {
   display: none;
   width: 620px;
@@ -2103,18 +2124,20 @@ font-size: 0;
   background-image: url("../img/icon-close.svg");
 
   cursor: pointer;
+  z-index: 3;
 }
 
 .modal-columns-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
-  min-height: 163px;
+  height: 163px;
 }
 
 .modal-columns-cart p {
